@@ -138,3 +138,4 @@ Exception in thread "main" java.lang.StackOverflowError
 
 * [GitHub 地址](https://github.com/StabilityMan/StabilityGuide)
 * 钉钉群号：23179349
+* 如果阅读本文有所收获，欢迎分享给身边的朋友，期待更多同学的加入！

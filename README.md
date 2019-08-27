@@ -16,14 +16,15 @@
 ## 加入我们
 * [GitHub 地址](https://github.com/StabilityMan/StabilityGuide)
 * 钉钉群号：23179349
-
+* 如果你在本专栏有所收获，欢迎分享给身边的朋友，期待更多同学的加入！
 
 ## 框架目录
 ### 1. 事前防范
 #### 1.1 代码规约
 #### 1.2 变更管控
 #### 1.3 性能压测
-#### 1.4 故障演练
+#### 1.4 混沌工程
+##### [混沌工程介绍与实践](docs/prevention/resilience/混沌工程介绍与实践.md)
 #### 1.5 风险预案 
 #### 1.6 限流降级
 
@@ -32,15 +33,17 @@
 #### 1.7 业务隔离 
 
 ### 2. 事中“止血”
-#### 2.1 监控
-#### 2.2 告警
-#### 2.3 异常巡检
-#### 2.4 流量调度 
+#### 2.1 监控告警
+###### [虾米SRE实践：监控体系升级之路](docs/processing/monitor/虾米SRE实践_监控体系升级之路.md) 
+#### 2.2 异常巡检
+#### 2.3 流量调度 
+#### 2.4 资损防控
 
 
 ### 3. 事后诊断
 #### 3.1 系统诊断
-##### 3.1.1 CPU 利用率高
+##### 3.1.1 CPU
+###### [系统稳定性——So Hot？快给 CPU 降降温](docs/diagnosis/system/cpu/SoHot？快给CPU降降温.md)
 ##### 3.1.2 Load 高
 ##### 3.1.3 网络诊断
 ##### 3.1.4 磁盘诊断
@@ -68,12 +71,13 @@
 ##### 3.3.3 消息诊断
 ##### 3.3.4 RPC 诊断
 ###### [系统稳定性——Dubbo 常见错误及解决方法](docs/diagnosis/plugin/rpc/系统稳定性——Dubbo常见错误及解决方法.md)
+##### 3.3.5 流计算诊断
 
 #### 3.4 在线诊断 
 ##### Arthas
 
 #### 3.5 链路追踪 
-##### Nignx 链路追踪
+##### [如何检测Web服务请求丢失问题](docs/diagnosis/tracing/如何检测Web服务请求丢失问题.md)
 #### 3.6 RootCause 
 ##### 服务响应慢诊断
 
@@ -88,7 +92,12 @@
 	* [系统稳定性——NoSuchMethodError 常见原因及解决方法](docs/diagnosis/jvm/exception/系统稳定性——NoSuchMethodError常见原因及解决方法.md)@涯海
 	* [咱们从头到尾说一次Java垃圾回收](docs/diagnosis/jvm/gc/咱们从头到尾说一次垃圾回收.md)@率鸽
 	* [流控降级最佳实践](docs/prevention/resilience/流控降级最佳实践.md) @宿何	
-* 2019-08-26
+* 2019-08-22
+    * [So Hot？快给 CPU 降降温](docs/diagnosis/system/cpu/SoHot？快给CPU降降温.md)@涯海
+    * [虾米SRE实践：监控体系升级之路](docs/processing/monitor/虾米SRE实践_监控体系升级之路.md)@全琮
+    * [混沌工程介绍与实践](docs/prevention/resilience/混沌工程介绍与实践.md)@穹谷
+    * [如何检测Web服务请求丢失问题](docs/diagnosis/tracing/如何检测Web服务请求丢失问题.md)@竹影
+* 2019-09-05
     * 数据库诊断，@承嗣
     * 服务响应慢诊断，@绍宽
     * Nginx 链路追踪，@竹影 
@@ -97,6 +106,11 @@
     * JVM 诊断，@芳玺
     * SchedulerX 常见问题及解决方法，@学仁
     * SpringCloud 常见问题及解决方法，@洛夜
+    * RocketMQ 常见问题及解决方法，@丁磊
+    * 流计算诊断，@云邪
+    * 慢 SQL 常见原因及解决方法，@长源
+    * 缓存诊断，@辰仪
+    * 系统稳定性之于 RocketMQ，@傅冲
 
 
 ## 专栏建设
@@ -132,3 +146,7 @@
 	* 前后效果对比。
 	* 简要的问题复盘总结，文档收尾。
 * 推荐阅读/产品链接/公众号/交流群等。
+
+## 友情链接
+* [Chaosblade——故障演练开源项目](https://github.com/chaosblade-io/chaosblade)
+* [Arthas——Java 在线诊断开源项目](https://github.com/alibaba/arthas)
